@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PDF Workbench · ASEAN Secretariat (unofficial)</title>
+<meta name="description" content="Browser-based PDF viewer and page organiser. Files stay on your device.">
+<style>
+:root{--blue:#0039A6;--ink:#1b2333;--muted:#5a6475;--line:#dfe3ea;--bg:#f6f7f9}
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+.strip{height:4px;background:linear-gradient(90deg,var(--blue) 0 60%,#ED1C24 60% 80%,#FFCC00 80%)}
+header{background:var(--blue);color:#fff}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.mark{font-weight:600;letter-spacing:.01em}.mark span{opacity:.75;font-weight:400}
+.hero{padding:48px 0 24px}h1{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.15;margin:0 0 12px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 28px;font-size:1.08rem}
+.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;padding:13px 22px;border-radius:6px;font-weight:600}
+.btn:hover{background:#002c80}.btn:focus-visible{outline:3px solid #FFCC00;outline-offset:2px}
+.small{color:var(--muted);font-size:.9rem;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:32px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px 20px}
+.card h2{font-size:1rem;margin:0 0 6px}.card p{margin:0;color:var(--muted);font-size:.95rem}
+.card.warn{border-left:4px solid #ED1C24}.card.note{border-left:4px solid #FFCC00}.card.ok{border-left:4px solid var(--blue)}
+footer{border-top:1px solid var(--line);padding:20px 0 40px;color:var(--muted);font-size:.88rem}
+a{color:var(--blue)}
+</style></head><body>
+<div class="strip"></div>
+<header><div class="wrap"><div class="mark">ASEAN Secretariat · PDF Workbench <span>(unofficial)</span></div></div></header>
+<main class="wrap">
+<section class="hero">
+<h1>View, search and reorganise PDFs in your browser</h1>
+<p class="lead">Read, search, rotate, delete, insert and reorder pages, merge and split documents, and open password-protected files. No installation and no account needed.</p>
+<a class="btn" href="app/">Open PDF Workbench</a>
+<p class="small">The first load downloads up to about 40 MB, so it can take a moment. Works best in a current Chrome, Edge or Firefox on a computer.</p>
+</section>
+<section class="grid" aria-label="Before you use it">
+<div class="card ok"><h2>Files stay on your device</h2><p>Everything runs locally in your browser. Documents are not uploaded to any server.</p></div>
+<div class="card warn"><h2>Early alpha software</h2><p>Based on PDFCraft 0.6.0. Always keep the original file and check the result before sharing.</p></div>
+<div class="card warn"><h2>Digital signing not verified</h2><p>The app includes E-Sign and certificate tools, but they have not been tested for ASEAN Secretariat use. Sign official documents with your approved software.</p></div>
+<div class="card note"><h2>Unofficial tool</h2><p>Not an official ASEAN Secretariat service. Check with IT before using it for official or confidential documents.</p></div>
+</section>
+</main>
+<footer><div class="wrap">Powered by <a href="https://getartcraft.com/apps/pdfcraft">PDFCraft</a> by the ArtCraft Team and contributors, used unmodified under the <a href="LICENSE-MIT">MIT</a> or <a href="LICENSE-APACHE">Apache 2.0</a> licence (<a href="NOTICE">notice</a>, <a href="https://github.com/storytold/pdfcraft">source</a>). Bundled fonts are under the SIL Open Font License. Not affiliated with or endorsed by ArtCraft or the ASEAN Secretariat.</div></footer>
+</body></html>
